@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
@@ -21,7 +21,7 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            github
           }
         }
       }
@@ -31,6 +31,7 @@ const Bio = () => {
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+  const title = data.site.siteMetadata?.title
 
   return (
     <div className="bio">
@@ -39,11 +40,14 @@ const Bio = () => {
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
         src="../images/profile-pic.png"
-        width={150}
+        width={100}
         height={100}
         quality={95}
         alt="Profile picture"
       />
+      <h1 className="main-heading">
+        <Link to="/">{title}</Link>
+      </h1>
       {author?.name && (
         <p>
           Created by <strong>{author.name}.</strong> {author?.summary || null}
