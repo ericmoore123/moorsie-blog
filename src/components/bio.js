@@ -10,9 +10,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
+
+  //'site' keyword queries the 'gatsby.config.js' file, following keywords delve further into file hierarchy 
   const data = useStaticQuery(graphql`
     query BioQuery {
-      site {
+      site { 
         siteMetadata {
           author {
             name
@@ -37,17 +39,19 @@ const Bio = () => {
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
         src="../images/profile-pic.png"
-        width={50}
-        height={50}
+        width={150}
+        height={100}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Created by <strong>{author.name}.</strong> {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          <br></br>
+          <br></br>
+          <a href={`https://github.com/${social?.github || ``}`}>
+            Check out my GitHub!
           </a>
         </p>
       )}
