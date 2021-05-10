@@ -6,5 +6,5 @@
 </p>
 <h1 align="center">
   Eric's personal development and fitness blog
-  <small>Created with GatsbyJS</small>
 </h1>
+<small>Created with GatsbyJS</small>
