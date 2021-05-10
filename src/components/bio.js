@@ -16,6 +16,7 @@ const Bio = () => {
     query BioQuery {
       site { 
         siteMetadata {
+          title
           author {
             name
             summary
@@ -35,6 +36,9 @@ const Bio = () => {
 
   return (
     <div className="bio">
+      <h2 className="main-heading">
+        <Link to="/">{title}</Link>
+      </h2>
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -45,9 +49,6 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
       {author?.name && (
         <p>
           Created by <strong>{author.name}.</strong> {author?.summary || null}
@@ -59,6 +60,11 @@ const Bio = () => {
           </a>
         </p>
       )}
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      </footer>
     </div>
   )
 }
