@@ -9,6 +9,10 @@ import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import { ImGithub } from "@react-icons/all-files/im/ImGithub";
+import { FaGlobe } from "@react-icons/all-files/fa/FaGlobe";
+import { GrLinkedin } from "@react-icons/all-files/gr/GrLinkedin";
+
 const Bio = () => {
 
   //'site' keyword queries the 'gatsby.config.js' file, following keywords delve further into file hierarchy 
@@ -43,22 +47,45 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
+        src="../images/eric-img.png"
         width={100}
         height={100}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
+        <>
+        
         <p>
           Created by <strong>{author.name}.</strong> {author?.summary || null}
           {` `}
-          <br></br>
-          <br></br>
-          <a href={`https://github.com/${social?.github || ``}`}>
-            Check out my GitHub!
-          </a>
-        </p>
+          </p>
+
+          <div className="social-container">
+            <strong>Check out my socials:</strong>
+            <ul>
+              <li>
+                <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
+                  <p>GitHub</p>
+                  <ImGithub size={25}/>
+                </a>
+              </li>
+              <li>
+                <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
+                  <p>LinkedIn</p>
+                  <GrLinkedin size={25}/>
+                </a>
+              </li>
+              <li>
+                <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
+                  <p>Site</p>
+                  <FaGlobe size={25}/>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+        </>
       )}
       <footer>
         © {new Date().getFullYear()}, Built with
@@ -69,4 +96,4 @@ const Bio = () => {
   )
 }
 
-export default Bio
+export default Bio;
