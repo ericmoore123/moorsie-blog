@@ -290,10 +290,6 @@ a:focus {
   border-right: solid rgb(165, 165, 165) 1px;
 }
 
-.bio p {
-  /* margin-bottom: var(--spacing-0); */
-}
-
 .bio-avatar {
   margin: var(--spacing-4) auto;
   min-width: 50px;
