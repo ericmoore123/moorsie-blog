@@ -67,24 +67,24 @@ const Bio = () => {
               <li>
                 <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
                   <p>GitHub</p>
-                  <ImGithub size={25}/>
+                  <ImGithub className="icon" size={25}/>
                 </a>
               </li>
               <li>
-                <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
+                <a className="social-link" href={`https://linkedin.com/in/${social?.linkedin}`}>
                   <p>LinkedIn</p>
-                  <GrLinkedin size={25}/>
+                  <GrLinkedin className="icon" size={25}/>
                 </a>
               </li>
               <li>
-                <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
+                <a className="social-link" href={`https://emoore.dev`}>
                   <p>Site</p>
-                  <FaGlobe size={25}/>
+                  <FaGlobe className="icon" size={25}/>
                 </a>
               </li>
             </ul>
           </div>
-        
+
         </>
       )}
       <footer>
