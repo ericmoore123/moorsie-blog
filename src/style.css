@@ -283,7 +283,8 @@ a:focus {
 	top: 0;
   display: block;
   /* margin-bottom: var(--spacing-16); */
-  max-width: 400px;
+  max-width: 350px;
+  min-width: 300px;
   height: 100vh;
   margin-right: var(--spacing-4);
   padding: var(--spacing-2);
@@ -296,6 +297,10 @@ a:focus {
   border-radius: 100%;
 }
 
+.blog-post{
+  padding: var(--spacing-8) ;
+}
+
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-0);
 }
@@ -305,8 +310,20 @@ a:focus {
   font-family: var(--font-heading);
 }
 
-.blog-post-nav ul {
+.blog-post-nav ul{
   margin: var(--spacing-0);
+}
+
+.blog-post-nav ul li a{
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
 }
 
 .gatsby-highlight {
@@ -328,5 +345,8 @@ footer{
   ul,
   ol {
     list-style-position: inside;
+  }
+  .bio {
+    min-width: 250px;
   }
 }
