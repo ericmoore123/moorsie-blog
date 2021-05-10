@@ -9,10 +9,10 @@ module.exports = {
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       github: `ericmoore123`,
+      linkedin: `ericdanielmoore`
     },
   },
   plugins: [
-    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
