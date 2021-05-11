@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: Welcome to 'Moorsie Thoughts'
 date: "2021-05-11T11:40:22.169Z"
 description: Welcome to Moorsie Thoughts! A blog in which I, Eric Moore (Moorsie for short), share regular web/software development and fitness related blog posts.
 ---
