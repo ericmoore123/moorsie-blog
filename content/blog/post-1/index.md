@@ -1,7 +1,7 @@
 ---
-title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+title: Welcome!
+date: "2021-05-11T11:40:22.169Z"
+description: Welcome to Moorsie Thoughts! A blog in which I, Eric Moore (Moorsie for short), share regular web/software development and fitness related blog posts.
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
