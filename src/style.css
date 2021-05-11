@@ -54,12 +54,13 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
+  --color-primary: #30323D;
+  --color-text: #5C80BC;
   --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-heading: #30323D;
+  --color-heading-black: #4D5061;
+  --color-accent: #E8C547;
+  --color-background: #f8f8f8;
 }
 
 /* HTML elements */
@@ -75,6 +76,7 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
 }
 
 body {
@@ -157,28 +159,6 @@ h6 > a {
   color: inherit;
 }
 
-.social-container{
-  font-size: 16px;
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-}
-
-.social-container li{
-  height: 1.3rem;
-  list-style-type: none;
-}
-
-.social-link {
-  display: flex;
-  text-decoration: none;
-  width: 100px;
-}
-
-.social-link p{
-  margin-right: 0.3rem;
-}
-
 /* Prose */
 
 p {
@@ -191,7 +171,7 @@ p {
 
 ul,
 ol {
-  margin-left: var(--spacing-0);
+  margin-left: var(--spacing-12);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
   margin-bottom: var(--spacing-8);
@@ -273,8 +253,16 @@ a:focus {
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-4);
+  padding: var(--spacing-4);
+  transition: 500ms;
+  border-radius: 5px;
+  box-shadow: 0.5px 1px 5px var(--color-heading-black);
+}
+
+.post-list-item:hover {
+  background-color: var(--color-accent);
 }
 
 .post-list-item p {
@@ -300,27 +288,51 @@ a:focus {
 }
 
 /* Bio Styles */
+
 .bio {
   position: sticky;
 	top: 0;
   display: block;
-  /* margin-bottom: var(--spacing-16); */
-  max-width: 350px;
-  min-width: 350px;
+  max-width: 375px;
+  min-width: 375px;
   height: 100vh;
   margin-right: var(--spacing-4);
-  padding: var(--spacing-2);
+  padding: var(--spacing-4);
   border-right: solid rgb(165, 165, 165) 1px;
 }
 
 .bio-avatar {
   margin: var(--spacing-4) auto;
-  min-width: 50px;
   border-radius: 100%;
 }
 
+.social-container{
+  font-size: 16px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.social-container li{
+  height: 1.3rem;
+  list-style-type: none;
+}
+
+.social-link {
+  display: flex;
+  text-decoration: none;
+  width: 100px;
+}
+
+.social-link p{
+  margin-right: 0.3rem;
+}
+
+/* Blog Post Styles */
+
 .blog-post{
   padding: var(--spacing-8) ;
+  
 }
 
 .blog-post header h1 {
