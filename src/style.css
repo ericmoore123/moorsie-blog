@@ -257,6 +257,8 @@ a:focus {
   margin-top: var(--spacing-4);
   padding: var(--spacing-4);
   transition: 500ms;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--color-heading-black);
 }
 
 .post-list-item:hover {
