@@ -118,7 +118,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`
+        display: `minimal-ui`,
+        icon: `src/images/eric-img.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
