@@ -318,6 +318,10 @@ a:focus {
   list-style-type: none;
 }
 
+.social-list{
+  margin-left: var(--spacing-0);
+}
+
 .social-link {
   display: flex;
   text-decoration: none;

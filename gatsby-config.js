@@ -5,7 +5,7 @@ module.exports = {
       name: `Eric Moore`,
       summary: `An Ottawa based developer and fitness enthusiast working for the Government of Canada.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Moorsie Thoughts Blog.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       github: `ericmoore123`,
