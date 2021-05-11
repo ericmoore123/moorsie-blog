@@ -57,13 +57,13 @@ const Bio = () => {
         <>
         
         <p>
-          Created by <strong>{author.name}.</strong> {author?.summary || null}
-          {` `}
-          </p>
+          Created by <strong>{author.name}.</strong> {author?.summary || null}</p>
+          
+        <p>I share regular web/software development and fitness discussion blog posts.</p>          
 
           <div className="social-container">
             <strong>Check out my socials:</strong>
-            <ul>
+            <ul className="social-list">
               <li>
                 <a className="social-link" href={`https://github.com/${social?.github || ``}`}>
                   <p>GitHub</p>
