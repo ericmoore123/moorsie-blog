@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -7,4 +6,9 @@
 <h1 align="center">
   Eric's personal development and fitness blog
 </h1>
-<small>Created with GatsbyJS</small>
+<h2>Created with:</h2>
+<ul>
+  <li>GatsbyJS & Gatsby Cloud</li>
+  <li>ReactJS</li>
+  <li>GraphQl</li>
+</ul>
